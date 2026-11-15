@@ -4,11 +4,14 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- Design System Implementation (Complete)
+- Editor Chrome Components (Complete) ✅
 
 ## Current Goal
 
-- Design system and UI primitives installed and configured
+- Feature spec 02-editor.md fully implemented and verified
+- All components compile without TypeScript errors
+- No lint errors
+- Dialog pattern ready for future use
 
 ## Completed
 
@@ -19,6 +22,12 @@ Update this file whenever the current phase, active feature, or implementation s
 - Created lib/utils.ts with cn() helper using clsx + tailwind-merge
 - Updated globals.css for dark theme as default (oklch color space)
 - Build passes successfully
+- Created EditorNavbar component with sidebar toggle button using PanelLeftOpen/PanelLeftClose icons
+- Created ProjectSidebar component with floating overlay, Tabs (My Projects, Shared), empty states, and New Project button
+- Dialog pattern already established in components/ui/dialog.tsx (title, description, footer actions)
+- Created EditorLayout component integrating navbar and sidebar with responsive sidebar state
+- Updated RootLayout to use EditorLayout wrapper
+- Updated page metadata title to "ArchFlow"
 
 ## In Progress
 
